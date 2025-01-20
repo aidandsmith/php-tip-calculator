@@ -14,9 +14,9 @@
     <form method="POST" action="results.php">
         <label for="billAmount">Bill Total</label>
         <input type="number" name="billAmount" placeholder="Enter bill amount">
-        <label for="guests"></label>
+        <label for="guests">Number of Guests</label>
         <input type="number" name="guests" placeholder="Enter total guests">
-        <label for="tipPercentage"></label>
+        <label for="tipPercentage">Tip Percentage</label>
         <input type="number" name="tipPercentage" placeholder="Enter tip percentage" min="15" value="15">
         <input type="submit" value="Split the Bill!">
     </form>
