@@ -26,8 +26,8 @@ body {
 .page-header {
     display: flex;
     flex-direction: column;
-    justify-content: center;  
-    border-right: 1px solid #ffffff;
+    justify-content: center;
+    align-items: center; 
     padding-right: 2rem;
 }
 
@@ -46,7 +46,8 @@ form input[type="number"] {
     border: 2px solid #232323;
 }
 
-textarea:focus {
+form input:focus {
+    background-color: #94ffb2;
     border: none;
 }
 
@@ -55,4 +56,19 @@ textarea:focus {
     color: #232323;
     padding: 1rem 2rem;
     border-radius: 15px;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+    background-color: #a2ffbc;
+}
+
+p {
+    margin-left: 2rem;
+    font-size: 24px;
+}
+
+span {
+    color: #94ffb2;
+    font-weight: 600;
 }
