@@ -21,7 +21,12 @@
             $totalTip = $billAmount * ($tipPercentage / 100);
             $splitTotal = ($totalTip + $billAmount) / $guestAmount;
         ?>
-        <p>The total each person owes is <span>$<?php echo number_format($splitTotal, 2)?></span></p>
+        <div>
+            <p>Bill Total: <span>$<?php echo number_format($billAmount, 2) ?></span></p>
+            <p>Tip Total: <span>$<?php echo number_format($totalTip, 2) ?></span></p>
+            <p>Amount Owed: <span>$<?php echo number_format(($billAmount + $totalTip), 2) ?></span></p>
+            <p>The total each person owes is <span>$<?php echo number_format($splitTotal, 2)?></span></p>
+        </div>
     </div>
 </body>
 </html>
